@@ -1,0 +1,9 @@
+USC EE653 Project: CaMGraph-An efficient GPUs last-level cache management for graph specialized application
+Jianqi Zhang, Chao Gao, Chih-Hsien Chu
+
+This paper presents, CaMGraph, an efficient GPU Last Level cache(LLC) management which aims at improving cache locality and reducing cache contention for Sparse Linear Algebra. In many emerging applications such as Deep Learning, Graph Analytic, Sparse Linear Algebra has become more and more important, however general purpose processing unit suffers from both badly temporal and spatial cache locality. Nevertheless, in graph processing unit(GPU) graph analytic problem, we are normally suffering from cache contention due to limited cache size that shared across tens of concurrently running warps. Given the problems we are facing in this domain specific area, we propose CaMGraph cache management policy to not only improve cache locality but also enable GPU fully utilize resources which are normally under utilized.
+
+This repo contains the GPU architecture description based on GPGPU-sim 4.0 and linebacker.
+
+You should install and setup the environment folloing GPGPU-sim_distribution:https://github.com/gpgpu-sim/gpgpu-sim_distribution and linebacker:https://github.com/v-raghav/linebacker/tree/master/src.
+
